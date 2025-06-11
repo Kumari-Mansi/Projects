@@ -117,7 +117,7 @@ position: relative;
 
 .maaBeti{
    display: flex;
-   align-item:center;
+   align-items:center;
    justify-content: space-evenly;
    background-image: url(images/MaaBeti.png);
    height: 580px;
@@ -313,4 +313,76 @@ position: relative;
 .right img:nth-child(8){
     width: 450px;
 }
+
+.secondSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  overflow: hidden;
+}
+
+.secondSection img:nth-child(1){
+  overflow-x: hidden;
+  width: 80vw;
+
+}
+
+.secondSection >p{
+font-size: 2.6em;
+text-align: center;
+letter-spacing: -1px;
+line-height: 50px;
+overflow: hidden;
+font-weight: 500px;
+
+}
+
+.secondSection img:nth-child(3){
+  overflow-x: hidden;
+  width: 80vw;
+
+}
+
+.partone{
+  display: flex;
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 180px;
+  
+}
+
+.leftpart>h1{
+  overflow: hidden;
+  font-size: 3.5em;
+  line-height: 45px;
+  letter-spacing: -5;
+  padding-bottom: 20px;
+}
+
+.learnmore{
+  position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 20px;
+    overflow: hidden;
+
+}
+.learnmore>span{
+  display: inline-block;
+  padding-top: 40px;
+  font-size: 16px;
+/* text-decoration: underline  rgb(20, 209, 20); */
+
+}
+
+.learnmore>img{
+  margin-left: 10px;
+  rotate: 180deg;
+
+} 
 
