@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #f7fae7;
+    padding: 0 40px;
+
+}
+
+.features{
+    position: relative;
+     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 110px;
+    height: 20px;
+    overflow: hidden;
+
+}
+
+.features::after{
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 3px;
+    left: 4%;
+    bottom: 0;
+    background-color: rgb(20, 209, 20);
+    transform: scaleX(0);
+    transition: all 0.5s ease-in-out;
+    transform-origin: left;
+}
+
+.slide{
+position: relative;
+}
+.slide::after{
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 3px;
+    left: 4%;
+    bottom: 0;
+    background-color: rgb(20, 209, 20);
+    transform: scaleX(0);
+    transition: all 0.5s ease-in-out;
+    transform-origin: left;
+}
+
+.slide:hover::after{
+    transform: scaleX(1);
+
+}
+.features:hover::after{
+    transform: scaleX(1);
+
+}
+
+.features>img{
+    /* rotate: -90deg; */
+   transform: rotate(-90deg);
+   width: 9px;
+   height: 9px;
+ 
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+/* .navbar:hover{
+    cursor: pointer;
+} */
+
+.navbar img:nth-child(1){
+    height: 30px;
+    width: 120px;
+}
+
+.nav-items>p{
+     cursor: pointer;
+}
+.nav-items{
+    font-size: 20px;
+    display:flex ;
+    gap: 50px;
+}
+
+.navbar > button,.btn{
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: rgb(20, 209, 20);
+    font-size: 15px;
+    display: flex;
+    padding: 10px 20px;
+    border: none;
+    border: 1px solid black;
+}
+
+.firstSection{
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.maaBeti{
+   display: flex;
+   align-item:center;
+   justify-content: space-evenly;
+   background-image: url(images/MaaBeti.png);
+   height: 580px;
+   width: autof;
+   border: 1px solid white;
+   overflow: hidden;
+   border-radius: 25px;
+   background-size: cover;
+}
+
+.firstSection>p{
+    padding-top: 6px;
+    text-align: right;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    position: relative;
+    width: 60%;
+    padding-top: 120px;
+    padding-left: 350px;
+     
+}
+
+.btn{
+    width: 180px;
+}
+.left>.leftmsg{
+ color: white; 
+ gap: 30px; 
+}
+
+.left>.leftmsg>h1{
+    overflow-y: hidden;
+    letter-spacing: -1px;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 60px;
+    padding-bottom: 20px;
+    
+    
+}
+
+.right{
+    position: relative;
+    width: 40%;
+    overflow: hidden;
+   
+}
+
+.right img:nth-child(1){
+    padding-top: 5px;
+    width: 450px;
+    animation: gm 0.5s ease-in-out;
+}
+@keyframes gm {
+  0%{
+    transform: translateY(50px);
+  }
+  
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.right img:nth-child(2){
+  position: absolute;
+  left: 5px;
+  top: 19px;
+  width: 450px;
+     animation: dil 1s ease-in-out;
+}
+@keyframes dil {
+  0%{
+   opacity: 0;
+  }
+
+  75%{
+    opacity: 0;
+  }
+  
+  100%{
+   opacity: 1;
+  }
+}
+
+.right img:nth-child(3){
+    width: 450px;
+       animation: t 1.4s ease-in-out;
+}
+@keyframes t {
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  50%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.right img:nth-child(4){
+    width: 450px;
+      animation: voice 1.9s ease-in-out;
+}
+@keyframes voice {
+  0%{
+    opacity: 0;
+    transform: translateY(75px);
+  }
+  
+  50%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.right img:nth-child(5){
+    width: 450px;
+      animation: em 2.7s ease-in-out;
+}
+@keyframes em {
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  50%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.right img:nth-child(6){
+    position: absolute;
+    width: 450px;
+    top: 480px;
+    left: 5px;
+      animation: emoji 3s ease-in-out;
+}
+@keyframes emoji {
+  0%{
+   opacity: 0;
+  }
+
+  75%{
+    opacity: 0;
+  }
+  
+  100%{
+   opacity: 1;
+  }
+}
+
+.right img:nth-child(7){
+    width: 450px;
+     animation: trip 3.6s ease-in-out;
+}
+@keyframes trip {
+  0%{
+    opacity: 0;
+    transform: translateY(75px);
+  }
+  
+  50%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.right img:nth-child(8){
+    width: 450px;
+}
+
