@@ -367,22 +367,57 @@ font-weight: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 110px;
-    height: 20px;
+    width: 200px;
+    height: 70px;
+    padding-right: 47px;
     overflow: hidden;
 
 }
 .learnmore>span{
-  display: inline-block;
-  padding-top: 40px;
-  font-size: 16px;
-/* text-decoration: underline  rgb(20, 209, 20); */
+
+  padding-top: 18px;
+  font-size: 20px;
+text-decoration: underline  rgb(20, 209, 20);
 
 }
 
 .learnmore>img{
+  height: 12px;
+ 
   margin-left: 10px;
+  margin-top: 20px;
+ margin-left: 10px;
+padding-left: 40px;
   rotate: 180deg;
 
 } 
 
+.beach, .grpchat{
+  position: relative;
+}
+
+.beach img:nth-child(2){
+  position: absolute;
+  width: 340px;
+  top: 28%;
+  right: 40%;
+}
+
+.grpchat img:nth-child(2){
+  position: absolute;
+  width: 340px;
+  top: 20%;
+  right: 30%;
+  left: 10%;
+}
+
+.bgchange{
+  background-color:#111b21;
+  color: white;
+}
+
+.bgchange img:nth-child(1){
+  padding-top: 45px;
+  width:350px;
+  height: 550px;
+}
