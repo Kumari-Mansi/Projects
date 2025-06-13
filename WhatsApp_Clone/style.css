@@ -399,8 +399,8 @@ padding-left: 40px;
 .beach img:nth-child(2){
   position: absolute;
   width: 340px;
-  top: 28%;
-  right: 40%;
+  top: 27%;
+  right: -4%;
 }
 
 .grpchat img:nth-child(2){
