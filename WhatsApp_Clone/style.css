@@ -97,6 +97,8 @@ position: relative;
 }
 
 .navbar > button,.btn{
+  overflow:hidden;
+  position: relative;
     gap: 10px;
     justify-content: center;
     align-items: center;
@@ -106,9 +108,36 @@ position: relative;
     display: flex;
     padding: 10px 20px;
     border: none;
-    border: 1px solid black;
+    border: 0.1px solid black;
+    z-index:1;
 }
 
+.btn::before{
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  z-index: -1;
+  position: absolute;
+  content: "";
+  opacity: 1;
+  background-color: white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  transition:0.5s 0.5s;
+  transform: translateX(-150px) translateY(60px);
+}
+
+.btn:hover::before{
+  margin-right:30px;
+  transform: translateX(-150px) translateY(-20px);
+  opacity:1;
+}
+
+.btn:hover{
+  cursor:pointer;
+}
 .firstSection{
     padding-top: 25px;
     display: flex;
@@ -420,4 +449,115 @@ padding-left: 40px;
   padding-top: 45px;
   width:350px;
   height: 550px;
+}
+
+.footer{
+  margin-top: 100px;
+  color: white;
+  background-color: #111b21;
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.upper{
+  width: 55%;
+  height:50%;
+  display: flex;
+  justify-content: space-between;
+  padding:30px 0;
+  align-items: center;
+ 
+}
+
+hr{
+  color: white;
+  width: 55%;
+}
+.up1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 55%;
+  align-items: center;
+}
+
+.up2,.up3,.up4,.up5{
+  display: flex;
+  flex-direction: column;
+gap: 8px;
+}
+
+.up2>p{
+  padding-bottom: 19px;
+  font-size: 12px;
+ 
+}
+.up3>p{
+    padding-bottom: 19px;
+  font-size: 12px;
+ 
+}
+.up4>p{
+    padding-bottom: 19px;
+  font-size: 12px;
+ 
+}
+.up5>p{
+    padding-bottom: 19px;
+  font-size: 12px;
+ 
+}
+
+ul:hover{
+  text-decoration: underline white;
+}
+
+.lower{
+  margin-top: 50px;
+ width: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+
+.lower>p{
+  font-size: 15px;
+align-items: center;
+ display: flex;
+ justify-content: center;
+ 
+}
+.social{
+  display: flex;
+  justify-content: space-evenly;
+  width: 450px;
+  margin-left: 1f0px;
+}
+.social>i{
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 50%;
+  gap:10px;
+}
+
+.socialMedia:hover{
+  background-color:  rgb(20, 209, 20);
+    transition: .5s 0.5s;
+    color: black;
+    border-color: #111b2100;
+}
+
+select{
+  -webkit-appearance: none;
+  color: white;
+  background-color: black;
+  border:1px solid white;
+  border-radius:40px ;
+  padding: 16px 28px;
+
 }
