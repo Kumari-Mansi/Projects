@@ -197,13 +197,16 @@ position: relative;
 .right{
   overflow: hidden;
     position: relative;
-    width: 900px;
+    width: 500px;
     overflow: hidden;
    
 }
+#p1{
+  display:none;
+}
 
 .right img:nth-child(1){
-    padding-top: 5px;
+    padding-top: 10px;
     width: 450px;
     animation: gm 0.5s ease-in-out;
 }
@@ -220,7 +223,7 @@ position: relative;
 .right img:nth-child(2){
   position: absolute;
   left: 5px;
-  top: 19px;
+  top:24px;
   width: 450px;
      animation: dil 1s ease-in-out;
 }
@@ -239,7 +242,7 @@ position: relative;
 }
 
 .right img:nth-child(3){
-    width: 200px;
+    width: 23f0px;
     height: 100px;
     margin-left: 90px;
     animation: t 1.4s ease-in-out;
@@ -262,6 +265,7 @@ position: relative;
 
 .right img:nth-child(4){
     width: 450px;
+    height: 55px;
       animation: voice 1.9s ease-in-out;
 }
 @keyframes voice {
@@ -282,6 +286,7 @@ position: relative;
 
 .right img:nth-child(5){
     width: 450px;
+    height: 200px;
       animation: em 2.7s ease-in-out;
 }
 @keyframes em {
@@ -302,10 +307,14 @@ position: relative;
 
 .right img:nth-child(6){
     position: absolute;
-    width: 450px;
-    top: 480px;
-    left: 5px;
-      animation: emoji 3s ease-in-out;
+    width: 50px;
+    height: 200px;
+    top: 550px;
+    left: 10px;
+      animation: emoji 3.2s ease-in-out;
+}
+.media{
+  display:none;
 }
 @keyframes emoji {
   0%{
@@ -714,6 +723,68 @@ select{
     transition-property: opacity,transform,-webkit-transform;
 }
 }
+
+.media1{
+  display: none;
+}
+.media{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#img1{
+  display: block;
+  width: 430px;
+  height:150px;
+ 
+}
+#img2{
+  display: block;
+  width: 430px;
+  height:150px;
+ 
+}
+#p1{
+  display: block;
+  font-size: 25px;
+  font-weight:10px;
+  opacity: 4;
+
+}
+
+.thirdSection{
+  overflow:hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.partone{
+  padding: 0 30px;
+  margin-top: 80px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 6;
+ animation: none;
+  align-items: center;
+  gap:200px;
+}
+.leftpart h1:nth-child(1) {
+    overflow: hidden;
+    font-size: 3.2em;
+    line-height: 50px;
+    letter-spacing: -1px;
+    padding-bottom: 15px;
+}
+.partone2{
+  flex-direction: column-reverse;
+}
+.partone1{
+  flex-direction: column-reverse;
+}
+
+
 }
 
 /* Medium (M) */
